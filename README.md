@@ -1,10 +1,28 @@
-# Shop
+# API server
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+Inside the folder server_api install dependencies with
+```
+$ yarn
+```
+
+And then when it is finished, run the API with:
+
+```
+$ yarn start
+```
+
+This will run the test API in `localhost:3000`
+
+
+# With the API running, install the dependencies for the angular project executing this command from the main folder:
+
+```
+$ npm install
+```
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` in the main folder for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Running unit tests
 
