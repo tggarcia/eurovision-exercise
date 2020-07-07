@@ -1,0 +1,12 @@
+@import "src/styles/global";
+
+.sidenav {
+  height: 100vh;
+  width: 58px; 
+
+  &__container {
+    border-right: 1px solid $light-gray;
+    height: 100%;
+  }
+}
+  

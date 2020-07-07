@@ -1,0 +1,11 @@
+<mat-form-field appearance="fill">
+    <mat-label>Order by</mat-label>
+    <mat-select [(ngModel)]="sortFilterSelected" (selectionChange)="onSelectionChanges($event)">
+      <mat-option [value]="sortFilterEnum.ID">
+        Id
+      </mat-option>
+      <mat-option [value]="sortFilterEnum.NAME">
+        Name
+      </mat-option>
+    </mat-select>
+</mat-form-field>

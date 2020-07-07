@@ -1,0 +1,13 @@
+<app-filters
+    [sortFilterSelected]="sortFilterSelected$ | async"
+    (sortFilterChanged)="onSortFilterChanged($event)"
+></app-filters>
+<app-cities-list
+    [cities]="cities"
+    [totalCities]="totalCities"
+    [itemsPerPage]="itemsPerPage$ | async"
+    [pageOpened]="pageOpened$ | async"
+    [sortFilterSelected]="sortFilterSelected$ | async"
+    (pageSizeChanged)="onPageSizeChanged($event)"
+    (pageSelected)="onPageSelected($event)"
+></app-cities-list>

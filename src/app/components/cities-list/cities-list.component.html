@@ -1,0 +1,22 @@
+<mat-grid-list cols="2" rowHeight="25px" class="cities-list">
+  <mat-grid-tile class="cities-list__header">Id</mat-grid-tile>
+  <mat-grid-tile class="cities-list__header">City</mat-grid-tile>
+  <mat-grid-tile colspan='2'>
+    <mat-divider class="cities-list__divider"></mat-divider>
+  </mat-grid-tile>
+  <ng-container *ngFor="let city of cities">
+    <mat-grid-tile>{{city.id}}</mat-grid-tile>
+    <mat-grid-tile>{{city.name}}</mat-grid-tile>
+    <mat-grid-tile colspan='2'>
+      <mat-divider class="cities-list__divider"></mat-divider>
+    </mat-grid-tile>
+  </ng-container>
+</mat-grid-list>
+
+<mat-paginator
+  [length]="totalCities"
+  [pageSize]="itemsPerPage"
+  [pageIndex]="pageOpened"
+  [pageSizeOptions]="[5, 10, 25, 50, 100]"
+  (page)="onPaginatorClicked($event)"
+></mat-paginator>

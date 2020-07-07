@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('src/assets/fonts/Proxima-Nova-Regular.otf');
+}
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&display=swap" !default;
+@import url($web-font-path);

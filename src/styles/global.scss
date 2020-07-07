@@ -1,0 +1,7 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "src/styles/variables";
+
+button:focus {
+    border: none;
+    outline: none;
+}

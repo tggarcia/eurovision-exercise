@@ -1,0 +1,27 @@
+@import "src/styles/global";
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    padding: 0 4px;
+}
+
+.mat-toolbar.mat-primary {
+    background-color: $medium-red;
+    font-family: "Proxima Nova Rg"
+}
+
+.toolbar {
+    &__button {
+        margin-left: 7px;
+    }
+
+    &__button:focus {
+        border: 0;
+        outline: 0;
+    }
+
+    &__title {
+        color: $light-base;
+        padding-left: 12px;
+        text-decoration: none;
+    }
+}
